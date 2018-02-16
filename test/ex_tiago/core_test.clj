@@ -13,7 +13,7 @@
 
 
 (facts "about `scrabble_letter`"
-  (fact "toda letra é retornada com caixa baixa"
+  (fact "Every letter is returned with lowercase, based on the map of points"
     (scrabble_letter "A") => 1
       (scrabble_letter "B") => 3
         (scrabble_letter "C") => 3
@@ -21,7 +21,7 @@
 
 
 (facts "about `scrabble_word`"
-  (fact "cada letra recebe um valor"
+  (fact "Each letter receives a value, forming a set of letters"
     (scrabble_word "a") => 1
       (scrabble_word "bala") => 6
         (scrabble_word "cabbage") => 14
